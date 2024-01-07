@@ -91,7 +91,7 @@
   letter-spacing: 1.12px;
   color: var(--white-color);
   text-align: center;
-  line-height: 1.07.143%;
+  line-height: 1.07;
   max-width: 496px;
 }
 .header-section {
@@ -886,8 +886,20 @@
   display: flex;
   gap: 24px;
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 428px) {
   body {
     overflow-x: hidden;
+  }
+  .container {
+    width: 100%;
+  }
+  .header-section {
+    max-width: 100%;
+  }
+  .header-title {
+    /* Header 1 */
+    font-size: 36px;
+    line-height: 40px;
+    max-width: 320px;
   }
 }
