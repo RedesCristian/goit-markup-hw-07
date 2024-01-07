@@ -886,7 +886,8 @@
   display: flex;
   gap: 24px;
 }
-@media screen {
-  max-width: 320px;
-  
+@media screen and (max-width: 320px) {
+  body {
+    overflow-x: hidden;
+  }
 }
