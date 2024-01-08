@@ -888,18 +888,70 @@
 }
 @media screen and (max-width: 428px) {
   body {
+    overflow: scroll;
     overflow-x: hidden;
   }
   .container {
     width: 100%;
   }
+  .header-div {
+    height: 70px;
+  }
   .header-section {
-    max-width: 100%;
+    width: 100%;
   }
   .header-title {
-    /* Header 1 */
     font-size: 36px;
+    font-weight: 700;
     line-height: 40px;
-    max-width: 320px;
+    letter-spacing: 0.72px;
+    padding: 0 15px;
+  }
+  .title-people-img {
+    width: 428px;
+  }
+  .section-two {
+    width: 0;
+    height: 0;
+    z-index: -1;
+  }
+  .advantages-sub-title {
+    display: flex;
+    text-align: center;
+
+    /* Header 2 */
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 111.111% */
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    color: var(--navy-blue-color);
+    align-self: strech;
+    padding: 0 16px;
+    width: 396px;
+  }
+  .paragraf {
+    display: flex;
+    align-self: stretch;
+    color: var(--slate-color);
+    /* Body Medium */
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.32px;
+    padding: 0 16px;
+    width: 396px;
+  }
+  .strategy-space {
+    width: 100%;
+
+    margin-bottom: 8px;
+  }
+  .header-hwiii {
+    width: 428px;
   }
 }
