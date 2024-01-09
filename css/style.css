@@ -48,7 +48,6 @@
 }
 .list {
   list-style: none;
-  display: flex;
 }
 .nav-elements {
   font-weight: 500;
@@ -887,9 +886,9 @@
   gap: 24px;
 }
 @media screen and (max-width: 428px) {
-  body {
-    overflow: scroll;
+  .body-section {
     overflow-x: hidden;
+    width: 100%;
   }
   .container {
     width: 100%;
@@ -914,6 +913,9 @@
     width: 0;
     height: 0;
     z-index: -1;
+  }
+  .ccc {
+    gap: 72px;
   }
   .advantages-sub-title {
     display: flex;
@@ -953,5 +955,14 @@
   }
   .header-hwiii {
     width: 428px;
+  }
+  .s-section {
+    display: flex;
+    align-items: column;
+  }
+  .mobile-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
