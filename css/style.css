@@ -426,10 +426,7 @@
   width: 208px;
   height: 40px;
 }
-.customers-section {
-  padding-bottom: 120px;
-  padding-bottom: 120px;
-}
+
 .customers-icons {
   gap: 120px;
   display: flex;
@@ -941,12 +938,13 @@
     align-self: stretch;
     padding: 0 16px;
     width: 396px;
+    align-items: center;
+    justify-content: center;
   }
   .paragraf {
     display: flex;
     align-self: stretch;
     color: var(--slate-color);
-
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
@@ -955,6 +953,8 @@
     letter-spacing: 0.32px;
     padding: 0 16px;
     width: 396px;
+    align-items: center;
+    justify-content: center;
   }
   .strategy-space {
     width: 100%;
@@ -993,6 +993,8 @@
   .s-section-list {
     gap: 72px;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
   .section-c {
     font-size: 36px;
@@ -1002,5 +1004,32 @@
     letter-spacing: 0.72px;
     text-transform: capitalize;
     text-align: center;
+  }
+  .section-iv-name {
+    color: var(--navy-blue-color);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+    width: 100%;
+  }
+  .second-class {
+    width: 100%;
+  }
+  .customers-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    display: flex;
+    width: 100%;
+  }
+  .customers-position {
+    display: inline-flex;
+    flex-direction: column;
+  }
+  .customers-list {
+    display: flex;
   }
 }
