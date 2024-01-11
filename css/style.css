@@ -1036,10 +1036,22 @@
   .customers-icons {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .footer-form {
     display: flex;
     flex-direction: column;
+  }
+  .email-content {
+    width: 396px;
+  }
+  .fotter-subscribtion-button {
+    width: 165px;
+    height: 40px;
+    margin-left: 115px;
+  }
+  .footer-subscribe-paragraph {
+    text-align: center;
   }
 }
 
