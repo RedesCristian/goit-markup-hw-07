@@ -1020,16 +1020,33 @@
     width: 100%;
   }
   .customers-section {
-    padding-top: 120px;
-    padding-bottom: 120px;
     display: flex;
     width: 100%;
   }
+  .customers-list-li {
+    width: 176px;
+    height: 74px;
+    gap: 16px;
+  }
   .customers-position {
-    display: inline-flex;
+    height: 520px;
+    display: flex;
     flex-direction: column;
   }
-  .customers-list {
+  .customers-icons {
     display: flex;
+    flex-direction: column;
+  }
+  .footer-form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1158px) {
+  .customers-list {
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
   }
 }
