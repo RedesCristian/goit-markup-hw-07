@@ -1053,6 +1053,45 @@
   .footer-subscribe-paragraph {
     text-align: center;
   }
+  .footer-social-media {
+    text-align: center;
+  }
+  .footer-logo {
+    margin: auto;
+  }
+  .mobile-style {
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .nav-menu {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  .adress {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  .charm_menu-hamburger {
+    visibility: visible;
+  }
 }
 
 @media screen and (max-width: 1158px) {
