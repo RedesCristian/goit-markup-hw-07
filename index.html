@@ -55,10 +55,13 @@
             </li>
           </ul>
         </nav>
-        <div class="charm_menu-hamburger" data-modal-open>
+
+        <div class="charm_menu-hamburger">
+         <button class="charm_menu-hamburger-button" js-open-menu> 
           <div class="lines"></div>
           <div class="lines"></div>
           <div class="lines"></div>
+        </button>
         </div>
         <!--contacts-->
         <address class="adress">
@@ -640,15 +643,63 @@
           <button class="terms-and-services-button" type="submit">Send</button>
         </form>
       </div>
-      <div class="modal-window-mobile-menu">
-        <button class="close-button" type="button" data-modal-close>
-          <svg class="svg-close-button" width="8" height="8">
-            <use href="./images/icons.svg#close"></use>
-          </svg>
-        </button>
+    </div>
+    <div class="modal-window-mobile-menu visually-hidden" js-menu-container>
+      <button class="close-button" type="button" js-close-menu>
+        <svg class="svg-close-button" width="8" height="8">
+          <use href="./images/icons.svg#close"></use>
+        </svg>
+      </button>
+      <div>
+           <ul class="list nav-menu">
+            <li>
+              <a
+                class="nav-elements link studio-link studio-style"
+                href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li>
+              <a
+                class="nav-elements link studio-link studio-style"
+                href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a class="nav-elements link studio-link studio-style" href="">
+                Contacts</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <address class="adress">
+          <!--de la <adress> am scos clasa adress-->
+          <ul class="list adress-list">
+            <li>
+              <a class="link adress-color" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+
+            <li>
+              <a class="link adress-color" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
       </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

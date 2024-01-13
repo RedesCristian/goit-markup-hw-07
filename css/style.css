@@ -1033,6 +1033,9 @@
     display: flex;
     flex-direction: column;
   }
+  .customers-list {
+    flex-wrap: wrap;
+  }
   .customers-icons {
     display: flex;
     flex-direction: column;
@@ -1116,7 +1119,32 @@
       0px 1px 1px 0px rgba(46, 47, 66, 0.16),
       0px 2px 1px 0px rgba(46, 47, 66, 0.08);
   }
-  .charm_menu-hamburger:checked + .modal-window-mobile-menu {
-    visibility: visibile;
+
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  .charm_menu-hamburger:checked
+    + .modal-window-container
+    .modal-window-mobile-menu {
+    visibility: visible;
+  }
+  .charm_menu-hamburger-button {
+    width: 36px;
+    height: 26px;
+    border: none;
+    background-color: transparent;
+  }
+  .modal-window {
+    width: 392px;
+    height: 584px;
   }
 }
