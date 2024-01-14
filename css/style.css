@@ -967,6 +967,7 @@
   }
   .header-hwiii {
     width: 428px;
+    position: relative;
   }
   .s-section {
     display: flex;
@@ -1097,7 +1098,8 @@
     overflow: hidden;
   }
   .modal-mobile {
-    background-color: #31d0aa;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: relative;
   }
   .modal-mobile-nav-menu {
     width: 428px;
@@ -1106,9 +1108,10 @@
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
       0px 1px 1px 0px rgba(46, 47, 66, 0.16),
       0px 2px 1px 0px rgba(46, 47, 66, 0.08);
-      display: flex;
-      flex-direction: column;
-      
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
   }
 
   .modal-mobile {
@@ -1117,10 +1120,10 @@
   .mobile-menu-list {
     flex-direction: column;
     gap: 40px;
-    padding-top: 80px;
-    padding-right: 240px; 
+    padding-top: 60px;
+    padding-right: 240px;
     padding-left: 40px;
-    padding-bottom:auto;
+    padding-bottom: auto;
   }
   .studio-mobile-link:focus {
     color: var(--ocean-color);
@@ -1139,7 +1142,7 @@
     text-transform: capitalize;
   }
   .mobile-menu-adress {
-    color:var(--slate-color)
+    color: var(--slate-color);
     font-family: Roboto;
     font-size: 36px;
     font-style: normal;
@@ -1148,14 +1151,37 @@
     letter-spacing: 0.72px;
     text-transform: capitalize;
   }
-  .mobile-menu-adress:focus{
-    color:var(--ocean-color);
-
+  .mobile-menu-adress:focus {
+    color: var(--ocean-color);
   }
-  .mobile-adress-list{
+  .mobile-adress-list {
     flex-direction: column;
+    margin-top: 255px;
+    gap: 40px;
   }
-  .section-iv-link{
 
+  .mobile-mail-style {
+    color: var(--slate-color);
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.4px;
+  }
+  .social-media-team {
+    margin-bottom: 40px;
+    justify-content: space-evenly;
+  }
+  .open-menu-btn {
+    position: absolute;
+    width: 32px;
+    height: 22px;
+  }
+  .close-button {
+    position: absolute;
+  }
+  .nav-hwiii {
+    width: 369px;
   }
 }
