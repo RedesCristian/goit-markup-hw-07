@@ -55,14 +55,6 @@
             </li>
           </ul>
         </nav>
-
-        <div class="charm_menu-hamburger">
-         <button class="charm_menu-hamburger-button" js-open-menu> 
-          <div class="lines"></div>
-          <div class="lines"></div>
-          <div class="lines"></div>
-        </button>
-        </div>
         <!--contacts-->
         <address class="adress">
           <!--de la <adress> am scos clasa adress-->
@@ -80,6 +72,84 @@
             </li>
           </ul>
         </address>
+      </div>
+      <div class="modal-mobile" js-menu-container>
+        <button id="open-menu" js-open-menu></button>
+        <div id="open-menu" class="modal-mobile-nav-menu">
+          <button class="close-button" type="button" js-close-menu>
+            <svg class="svg-close-button" width="8" height="8">
+              <use href="./images/icons.svg#close"></use>
+            </svg>
+          </button>
+          <nav>
+            <ul class="list mobile-menu-list">
+              <li>
+                <a class="link studio-mobile-link" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li>
+                <a
+                   class="link studio-mobile-link""
+                  href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a  class="link studio-mobile-link" href="">
+                  Contacts</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <!--contacts-->
+          <address class="mobile-menu-adress">
+            <ul class="list mobile-adress-list">
+              <li>
+                <a class="link adress-color" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+
+              <li>
+                <a class="link adress-color" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="social-media-team list-disc">
+                  <li class="social-media-design">
+                    <a class="section-iv-link" href="">
+                      <svg class="svg-social-media-links" width="16" height="16">
+                        <use href="./images/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="social-media-design">
+                    <a class="section-iv-link" href="">
+                      <svg class="svg-social-media-links" width="16" height="16">
+                        <use href="./images/icons.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-media-design">
+                    <a class="section-iv-link" href="">
+                      <svg class="svg-social-media-links" width="16" height="16">
+                        <use href="./images/icons.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social-media-design">
+                    <a class="section-iv-link" href="">
+                      <svg class="svg-social-media-links" width="16" height="16">
+                        <use href="./images/icons.svg#linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+        </div>
       </div>
 
       <!--logo-->
@@ -644,62 +714,8 @@
         </form>
       </div>
     </div>
-    <div class="modal-window-mobile-menu visually-hidden" js-menu-container>
-      <button class="close-button" type="button" js-close-menu>
-        <svg class="svg-close-button" width="8" height="8">
-          <use href="./images/icons.svg#close"></use>
-        </svg>
-      </button>
-      <div>
-           <ul class="list nav-menu">
-            <li>
-              <a
-                class="nav-elements link studio-link studio-style"
-                href="./index.html"
-                >Studio</a
-              >
-            </li>
-            <li>
-              <a
-                class="nav-elements link studio-link studio-style"
-                href="./portfolio.html"
-                >Portfolio</a
-              >
-            </li>
-            <li>
-              <a class="nav-elements link studio-link studio-style" href="">
-                Contacts</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div>
-        <address class="adress">
-          <!--de la <adress> am scos clasa adress-->
-          <ul class="list adress-list">
-            <li>
-              <a class="link adress-color" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
 
-            <li>
-              <a class="link adress-color" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
-        </address>
-      </div>
-    </div>
     <script src="./js/modal.js"></script>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
-    <script defer src="js/mobile-menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

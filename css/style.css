@@ -884,6 +884,10 @@
   gap: 24px;
 }
 
+.modal-mobile {
+  visibility: hidden;
+}
+
 @media screen and (max-width: 428px) {
   .body-section {
     overflow-x: hidden;
@@ -1092,59 +1096,66 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
-  .charm_menu-hamburger {
-    display: inline-flex;
-    flex-direction: column;
-    position: relative;
-    width: 32px;
-    height: 22px;
-    justify-content: center;
-    gap: 10px;
+  .modal-mobile {
+    background-color: #31d0aa;
   }
-
-  .lines {
-    width: 100%;
-    background-color: #2e2f42;
-    border-radius: 4px;
-    border: 2px solid #2e2f42;
-  }
-  .header-div {
-    align-items: center;
-  }
-  .modal-window-mobile-menu {
-    width: 396px;
+  .modal-mobile-nav-menu {
+    width: 428px;
     height: 796px;
     background: var(--white-color);
     box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
       0px 1px 1px 0px rgba(46, 47, 66, 0.16),
       0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+      display: flex;
+      flex-direction: column;
+      
   }
 
-  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
-  .charm_menu-hamburger:checked
-    + .modal-window-container
-    .modal-window-mobile-menu {
+  .modal-mobile {
     visibility: visible;
   }
-  .charm_menu-hamburger-button {
-    width: 36px;
-    height: 26px;
-    border: none;
-    background-color: transparent;
+  .mobile-menu-list {
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 80px;
+    padding-right: 240px; 
+    padding-left: 40px;
+    padding-bottom:auto;
   }
-  .modal-window {
-    width: 392px;
-    height: 584px;
+  .studio-mobile-link:focus {
+    color: var(--ocean-color);
+  }
+  .studio-mobile-link:hover {
+    color: var(--ocean-color);
+  }
+  .studio-mobile-link {
+    color: var(--navy-blue-color);
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+  }
+  .mobile-menu-adress {
+    color:var(--slate-color)
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px; /* 111.111% */
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+  }
+  .mobile-menu-adress:focus{
+    color:var(--ocean-color);
+
+  }
+  .mobile-adress-list{
+    flex-direction: column;
+  }
+  .section-iv-link{
+
   }
 }
