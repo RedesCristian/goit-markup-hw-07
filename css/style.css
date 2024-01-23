@@ -194,9 +194,6 @@
 .customers-title {
   /* margin-bottom: 72px; */
 }
-.section-iii-img {
-  flex-basis: calc((100% - 48px) / 3);
-}
 
 .all-img {
   display: block;
@@ -390,9 +387,7 @@
   border-color: #404bbf;
   color: #404bbf;
 }
-.social-media-svg {
-  /* padding-left: 0px; */
-}
+
 .section-one-hero {
   display: flex;
   max-width: 1158px;
@@ -624,7 +619,6 @@
   flex-wrap: wrap;
 }
 .section-iii {
-  /* padding-bottom: 120px;  */
   display: none;
 }
 
@@ -978,9 +972,12 @@
   }
 
   .section-iii {
-    visibility: visible;
+    display: flex;
     padding-bottom: 120px;
-    flex-direction: row;
+    /* flex-direction: row; */
+  }
+  .what-are-we-doing-list {
+    flex-basis: calc((100% - 48px) / 3);
   }
 
   .nav-menu {
@@ -1000,6 +997,7 @@
   .s-section-list {
     display: flex;
     gap: unset;
+    flex-wrap: nowrap;
   }
   .section-iv {
     padding: 120px 0;
@@ -1010,6 +1008,9 @@
   }
   .all-img {
     width: 100%;
+  }
+  .section-iii-img {
+    /*flex-basis: calc((100% - 48px) / 3);*/
   }
   .social-media-team {
     margin-top: 8px;
@@ -1039,8 +1040,8 @@
   }
 
   .footer-form {
-    display: flex;
     gap: 24px;
+    display: flex;
   }
   .header-title {
     font-family: "Roboto";
@@ -1083,21 +1084,7 @@
     color: #ffffff;
   }
   .fotter-subscribtion-button {
-    min-width: 165px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: #ffffff;
-    cursor: pointer;
-    background-color: #4d5ae5;
-    border: none;
-    border-radius: 4px;
+    margin-left: 0;
   }
   .header-div {
     display: flex;
@@ -1127,10 +1114,30 @@
   }
   .footer-p {
     margin-bottom: 16px;
+    text-align: left;
+  }
+  .customers-icons {
+    flex-direction: row;
+    align-items: baseline;
+    padding: 100px 120px;
   }
   .footer-social-media {
     margin-bottom: 16px;
   }
+  .footer-email-container {
+  }
+  .footer-subscribe-paragraph {
+    text-align: start;
+  }
+  .footer {
+    display: flex;
+    padding: 96px 0 96px;
+  }
+  .social-media-svg {
+    padding-left: 0px;
+    margin: 0;
+  }
+
   .modal-window {
     position: absolute;
     top: 50%;
@@ -1154,6 +1161,9 @@
   }
   .last-section-li {
     margin-right: 0;
+  }
+  .social-media-mobile-style {
+    align-items: start;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1157px) {
@@ -1192,8 +1202,7 @@
     display: none;
   }
   .section-iii {
-    padding-bottom: 120px;
-    display: flex;
+    display: none;
   }
 
   .container {
