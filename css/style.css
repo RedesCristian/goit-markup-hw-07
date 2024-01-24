@@ -150,6 +150,7 @@
 .nav-hwiii {
   display: flex;
   align-items: center;
+  /* padding-left: 50px; */
 }
 
 .nav-menu {
@@ -237,6 +238,7 @@
 .port-button-list {
   justify-content: center;
   gap: 24px;
+  flex-wrap: wrap;
 }
 .port-btn {
   /* padding: 12px 24px; */
@@ -252,6 +254,7 @@
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
+  justify-content: center;
 }
 
 .div-app-interface {
@@ -259,15 +262,22 @@
   border: 1px solid #e7e9fc;
   border-top: none;
 }
-.aaa {
-  /* margin-bottom: 8px; */
+.portfolio-card-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue-color);
+  font-style: normal;
+  font-family: "Roboto";
 }
 .bbb {
   /* margin-left: 0; */
 }
 
 .ul-potf {
-  /* padding: 0; */
+  padding-bottom: 64px;
+  padding-top: 64px;
 }
 
 .title-people-img {
@@ -614,16 +624,17 @@
   align-items: center;
   padding-left: 16px;
   flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
 }
 .section-iii {
   display: none;
 }
 
 .mobile-screen {
-  /* display: flex; */
-  /* flex-direction: column; */
   text-align: center;
   flex-wrap: wrap;
+  padding: 0 15px;
 }
 .section-d {
   background-color: #f4f4fd;
@@ -655,10 +666,11 @@
 .footer {
   display: flex;
   padding: 96px 0 96px;
+  margin-top: 96px;
 }
 .footer-email-container {
   display: block;
-  width: 100%;
+  min-width: 320px;
 }
 .header-title {
   color: var(--white-color);
@@ -672,7 +684,7 @@
   line-height: 40px; /* 111.111% */
   letter-spacing: 0.72px;
   text-transform: capitalize;
-  width: 320px;
+  min-width: 75%;
 }
 .ccc {
   display: flex;
@@ -696,8 +708,8 @@
   margin: 0;
   flex-wrap: wrap;
   justify-content: center;
-  width: 396px;
-  height: 520;
+  width: 100%;
+  min-height: 520px;
   row-gap: 72px;
 }
 .company-a {
@@ -761,16 +773,17 @@
   background-color: #4d5ae5;
   border: none;
   border-radius: 4px;
-  margin-left: 120px;
+  margin-left: 75px;
 }
 .header-div {
   display: flex;
   justify-content: space-between;
   padding: 10px 15px 20px;
+  gap: 150px;
 }
 .advantages-sub-title {
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 700;
+  font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--navy-blue-color);
@@ -860,10 +873,12 @@
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .container {
-  min-width: 428px;
+  min-width: 320px;
   margin: 0 auto;
-  /* padding-left: 15px;
-  padding-right: 15px; */
+  padding: 0 15px;
+}
+.js-open-menu {
+  padding-right: 65px;
 }
 
 @media screen and (min-width: 1158px) {
@@ -987,6 +1002,10 @@
   .mobile-screen {
     display: flex;
     flex-direction: unset;
+    min-width: 1128px;
+  }
+  .title-people-img {
+    min-height: 600px;
   }
   .s-two {
     display: flex;
@@ -1017,7 +1036,7 @@
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 24px;
+    gap: 10px;
   }
   .card-content {
     padding: 32px 0;
@@ -1030,6 +1049,7 @@
     gap: 24px;
     display: flex;
     padding: 0;
+    min-width: 1128px;
   }
   .company-a {
     fill: currentColor;
@@ -1052,13 +1072,15 @@
     color: var(--white-color);
     text-align: center;
     line-height: 1.07;
-    max-width: 496px;
+    min-width: 496px;
+    margin-bottom: 0;
   }
   .ccc {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
+    padding-bottom: 0;
+    padding-top: 80px;
   }
   .customers-position {
     align-items: center;
@@ -1089,7 +1111,6 @@
   .header-div {
     display: flex;
     justify-content: space-between;
-    padding: 0 156px;
   }
   .advantages-sub-title {
     font-weight: 500;
@@ -1100,6 +1121,7 @@
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--slate-color);
+    text-align: start;
   }
   .section-c {
     font-size: 36px;
@@ -1176,9 +1198,6 @@
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1157px) {
-  .s-section-li {
-    width: calc((100% - 24px) / 2);
-  }
   .customers-list {
     max-width: 552px;
     flex-wrap: wrap;
@@ -1196,6 +1215,7 @@
     flex-grow: 1;
     max-width: 736px;
     margin: 96px 16px;
+    flex-wrap: wrap;
   }
   .nav-menu {
     display: flex;
@@ -1219,6 +1239,9 @@
   }
   .header-section {
     min-width: 1150px;
+  }
+  .s-section-li {
+    width: calc((100% - 24px) / 2);
   }
 
   .social-media-team {
@@ -1281,8 +1304,8 @@
     height: 436px;
   }
   .advantages-sub-title {
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 36px;
   }
   .paragraf {
     font-size: 16px;
