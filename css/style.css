@@ -684,7 +684,7 @@
   line-height: 40px; /* 111.111% */
   letter-spacing: 0.72px;
   text-transform: capitalize;
-  min-width: 75%;
+  width: 60%;
 }
 .ccc {
   display: flex;
@@ -777,7 +777,7 @@
 }
 .header-div {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 10px 15px 20px;
   gap: 150px;
 }
@@ -885,7 +885,7 @@
   .container {
     min-width: 1158px;
     margin: 0 auto;
-    padding: 0 120px 72px;
+    padding: 0 120px;
   }
   .adress {
     /*ok*/
@@ -1017,6 +1017,7 @@
     display: flex;
     gap: unset;
     flex-wrap: nowrap;
+    flex-direction: unset;
   }
   .section-iv {
     padding: 120px 0;
@@ -1072,7 +1073,7 @@
     color: var(--white-color);
     text-align: center;
     line-height: 1.07;
-    min-width: 496px;
+    width: 60%;
     margin-bottom: 0;
   }
   .ccc {
@@ -1199,8 +1200,18 @@
 }
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .customers-list {
-    max-width: 552px;
+    min-width: 552px;
     flex-wrap: wrap;
+    min-height: 360px;
+    row-gap: 24px;
+    align-items: center;
+    justify-content: center;
+  }
+  .customers-section {
+    padding-bottom: 0;
+  }
+  .header-div {
+    gap: 0;
   }
 
   .customers-list-li {
@@ -1235,13 +1246,17 @@
   }
 
   .container {
-    max-width: 768px;
+    min-width: 768px;
+    margin: 0 auto;
   }
   .header-section {
-    min-width: 1150px;
+    min-width: 768px;
   }
   .s-section-li {
     width: calc((100% - 24px) / 2);
+  }
+  .s-section-list {
+    flex-direction: unset;
   }
 
   .social-media-team {
@@ -1251,6 +1266,12 @@
     display: flex;
     justify-content: center;
     gap: 24px;
+  }
+  .footer-social-media {
+    text-align: start;
+  }
+  .mobile-style {
+    text-align: start;
   }
   .customers-icons {
     gap: 120px;
@@ -1263,21 +1284,22 @@
     justify-content: center;
     flex-direction: row;
   }
+  .social-media-mobile-style {
+    align-items: start;
+  }
   .footer-subscribe-paragraph {
     text-align: start;
-    padding-left: 130px;
   }
   .footer-email-container {
     display: inline-flex;
     flex-direction: column;
     justify-content: space-between;
-    min-width: 453px;
+    min-width: 506px;
   }
   .footer-form {
     display: flex;
     gap: 24px;
     justify-content: start;
-    padding-left: 130px;
   }
 
   .footer-form-label {
@@ -1297,11 +1319,11 @@
     font-weight: 700;
     line-height: 60px; /* 107.143% */
     letter-spacing: 1.12px;
-    width: 496px;
+    width: 60%;
   }
   .ccc {
-    width: 768px;
-    height: 436px;
+    min-width: 768px;
+    min-height: 436px;
   }
   .advantages-sub-title {
     font-weight: 700;
@@ -1331,5 +1353,8 @@
   }
   .li-lists {
     width: calc((100% - 24px) / 2);
+  }
+  .footer {
+    margin-top: 0;
   }
 }
