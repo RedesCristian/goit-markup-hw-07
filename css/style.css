@@ -909,6 +909,7 @@
 .menu-container.is-open {
   transform: translateX(0);
 }
+
 .menu-container {
   position: fixed;
   top: 0;
@@ -917,12 +918,13 @@
   height: 100vh;
   padding: 32px;
   background-color: var(--white-color);
+  background: var(--WHITE, #fff);
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
   z-index: 999;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 .mobile-menu-link {
   color: var(--navy-blue-color);
@@ -974,6 +976,7 @@
   align-items: center;
   gap: 56px;
   justify-content: center;
+  padding-left: 0;
 }
 
 .burger-svg {
