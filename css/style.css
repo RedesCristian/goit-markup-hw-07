@@ -52,16 +52,6 @@
   list-style: none;
   display: none;
 }
-.adress-mobile-menu {
-  font-family: "Roboto";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; /* 150% */
-  letter-spacing: 0.32px;
-  list-style: none;
-}
-
 .header-section {
   background-color: var(--navy-blue-color);
   min-width: 390px;
@@ -893,7 +883,7 @@
   outline: none;
 }
 .hamburger {
-  min-width: 320px;
+  width: 320px;
   max-width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
@@ -909,7 +899,6 @@
 .menu-container.is-open {
   transform: translateX(0);
 }
-
 .menu-container {
   position: fixed;
   top: 0;
@@ -918,13 +907,12 @@
   height: 100vh;
   padding: 32px;
   background-color: var(--white-color);
-  background: var(--WHITE, #fff);
-  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
   z-index: 999;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .mobile-menu-link {
   color: var(--navy-blue-color);
@@ -960,7 +948,8 @@
   flex-direction: column-reverse;
   align-items: center;
   gap: 40px;
-  margin-top: 150px;
+  margin-top: 100px;
+  padding: 0;
 }
 .mobile-mail {
   color: var(--slate-color);
@@ -974,9 +963,9 @@
 .social-media-team-mobile {
   display: flex;
   align-items: center;
-  gap: 56px;
+  gap: 40px;
   justify-content: center;
-  padding-left: 0;
+  padding: 0;
 }
 
 .burger-svg {
@@ -1318,6 +1307,20 @@
   .nav-menu {
     display: flex;
   }
+  .nav-elements {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--navy-blue-color);
+  }
+  .nav-elements:hover,
+  .nav-elements:focus {
+    color: #404bbf;
+  }
+  .nav-link:focus {
+    color: #404bbf;
+  }
   .adress {
     display: block;
   }
@@ -1325,6 +1328,15 @@
     flex-direction: column;
     gap: 12px;
   }
+  .adress-color {
+    color: var(--slate-color);
+  }
+
+  .adress-color:hover,
+  .adress-color:focus {
+    color: var(--ocean-color);
+  }
+
   .hamburger {
     display: none;
   }
